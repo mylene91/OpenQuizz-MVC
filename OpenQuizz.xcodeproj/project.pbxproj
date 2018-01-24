@@ -37,6 +37,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7835B9E82018DF08002FECDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7835B9E92018DF17002FECDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96995B692017DA8200F089B9 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7835B9EA2018DF23002FECDC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96995B6B2017DA8200F089B9 /* Main.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7835B9EB2018DFAF002FECDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96995B672017DA8200F089B9 /* AppDelegate.swift */,
+				7835B9E62018A9F1002FECDC /* Balham.otf */,
+				96995B6E2017DA8200F089B9 /* Assets.xcassets */,
+				96995B702017DA8200F089B9 /* LaunchScreen.storyboard */,
+				96995B732017DA8200F089B9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		96995B5B2017DA8200F089B9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +91,10 @@
 		96995B662017DA8200F089B9 /* OpenQuizz */ = {
 			isa = PBXGroup;
 			children = (
-				96995B672017DA8200F089B9 /* AppDelegate.swift */,
-				96995B692017DA8200F089B9 /* ViewController.swift */,
-				96995B6B2017DA8200F089B9 /* Main.storyboard */,
-				7835B9E62018A9F1002FECDC /* Balham.otf */,
-				96995B6E2017DA8200F089B9 /* Assets.xcassets */,
-				96995B702017DA8200F089B9 /* LaunchScreen.storyboard */,
-				96995B732017DA8200F089B9 /* Info.plist */,
+				7835B9E82018DF08002FECDC /* Model */,
+				7835B9E92018DF17002FECDC /* View */,
+				7835B9EA2018DF23002FECDC /* Controller */,
+				7835B9EB2018DFAF002FECDC /* Supporting Files */,
 			);
 			path = OpenQuizz;
 			sourceTree = "<group>";
