@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7835B9E72018A9F2002FECDC /* Balham.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7835B9E62018A9F1002FECDC /* Balham.otf */; };
 		96995B682017DA8200F089B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96995B672017DA8200F089B9 /* AppDelegate.swift */; };
 		96995B6A2017DA8200F089B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96995B692017DA8200F089B9 /* ViewController.swift */; };
 		96995B6D2017DA8200F089B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96995B6B2017DA8200F089B9 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7835B9E62018A9F1002FECDC /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Balham.otf; sourceTree = "<group>"; };
 		96995B642017DA8200F089B9 /* OpenQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96995B672017DA8200F089B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96995B692017DA8200F089B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				96995B672017DA8200F089B9 /* AppDelegate.swift */,
 				96995B692017DA8200F089B9 /* ViewController.swift */,
 				96995B6B2017DA8200F089B9 /* Main.storyboard */,
+				7835B9E62018A9F1002FECDC /* Balham.otf */,
 				96995B6E2017DA8200F089B9 /* Assets.xcassets */,
 				96995B702017DA8200F089B9 /* LaunchScreen.storyboard */,
 				96995B732017DA8200F089B9 /* Info.plist */,
@@ -125,6 +128,7 @@
 			files = (
 				96995B722017DA8200F089B9 /* LaunchScreen.storyboard in Resources */,
 				96995B6F2017DA8200F089B9 /* Assets.xcassets in Resources */,
+				7835B9E72018A9F2002FECDC /* Balham.otf in Resources */,
 				96995B6D2017DA8200F089B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
