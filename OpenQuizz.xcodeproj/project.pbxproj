@@ -50,7 +50,7 @@
 		7835B9E92018DF17002FECDC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				96995B692017DA8200F089B9 /* ViewController.swift */,
+				96995B6B2017DA8200F089B9 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -58,7 +58,7 @@
 		7835B9EA2018DF23002FECDC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				96995B6B2017DA8200F089B9 /* Main.storyboard */,
+				96995B692017DA8200F089B9 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
