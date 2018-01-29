@@ -14,7 +14,7 @@ class QuestionManager {
     static let shared = QuestionManager()
     private init() {}
     
-    
+    // récupère 10 questions dans la base de données (formate et les renvoie) (renvoie un tableau de questions)
     func get(completionHandler: @escaping ([Question]) -> ()) {
         let task = URLSession.shared.dataTask(with: self.url) { (data, response, error) in
             guard error == nil else {

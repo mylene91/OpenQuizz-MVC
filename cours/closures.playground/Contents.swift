@@ -25,3 +25,44 @@ print(monAdresse)
 var monAdresse2 = Adresse(voie: "ef", ville: "kejfk", pays: "nnj", codePostal: "9999")
 print(monAdresse2)
 
+
+///// TYPES FONCTION ///
+
+// je creer mes fonctions :
+
+func ajouteDeux(x: Int) -> Int {
+    return x + 2
+}
+
+func multiplieParTrois(x: Int) -> Int {
+    return x * 3
+}
+
+func soustraitQuatre(x: Int) -> Int {
+    return x - 4
+}
+
+func multiplieParDeux(x: Int) -> Int {
+    return x * 2
+}
+
+// je déclare un tableau de fonctions :
+var mesFonctions = [ajouteDeux(x: ), multiplieParTrois(x: ), soustraitQuatre(x: ), multiplieParDeux(x: )]
+
+// je parcours mon tableau de fonctions :
+var a = 2 // je déclare un entier
+for maFonction in mesFonctions {
+    a = maFonction(a) // il me demande de rentrer en paramète un Int
+}
+ a // va valloir 16 car la variable est passée par plusieurs étapes des fonctions dans le tableau
+
+
+
+
+
+
+
+
+
+
+

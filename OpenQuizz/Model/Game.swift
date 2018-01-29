@@ -30,6 +30,12 @@ class Game {
         state = .over
     }
     
+    // fonction privée qui va gérer les questions reçues :
+    private func receiveQuestions(_ questions: [Question]) {
+        self.questions = questions
+        state = .ongoing
+    }
+    
     func answerCurrentQuestion(with answer: Bool) {
         if (currentQuestion.isCorrect && answer) || (!currentQuestion.isCorrect && !answer) {
             score += 1
