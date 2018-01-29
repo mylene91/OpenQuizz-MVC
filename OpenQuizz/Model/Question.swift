@@ -10,7 +10,9 @@ import Foundation
 
 
 struct Question {
+    // Titre de la question
     var title = ""
+    // Réponse de la question
     var isCorrect = false
     
 }
