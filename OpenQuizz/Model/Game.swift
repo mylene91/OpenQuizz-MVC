@@ -9,6 +9,7 @@
 import Foundation
 
 class Game {
+    // score du joueur
     var score = 0
     
     private var questions = [Question]()
@@ -30,15 +31,21 @@ class Game {
         currentIndex = 0
         state = .over
         
-        QuestionManager.shared.get(completionHandler: receiveQuestions(_:)) // shared = instance unique de QuestionManager puis appel de la func get : passer en paramètre la private func receiveQuestions : lorsque les questions sont chargées c'est la fonction reveiveQuestions qui va être appellée avec en paramètre les questions reçues
+        QuestionManager.shared.get { (questions) in
+            self.questions = questions
+            // self pour lui rappeler son contexte car en closure on perd)
+            self.state = .ongoing // <- .ongoing : partie prête à démarrer
+            
+        }
+        // shared = instance unique de QuestionManager puis appel de la func get : passer en paramètre la private func receiveQuestions : lorsque les questions sont chargées c'est la fonction reveiveQuestions qui va être appellée avec en paramètre les questions reçues
     }
     
     // fonction privée qui va gérer les questions reçues :
-    private func receiveQuestions(_ questions: [Question]) { // prend en valeur tableau de question qui ne renvoie rien
-        print(questions)// print question pour verifier si ça fonctionne
-        self.questions = questions
-        state = .ongoing // <- .ongoing : partie prête à démarrer
-    }
+//    private func receiveQuestions(_ questions: [Question]) { // prend en valeur tableau de question qui ne renvoie rien
+//        print(questions)// print question pour verifier si ça fonctionne
+//        self.questions = questions
+//        state = .ongoing // <- .ongoing : partie prête à démarrer
+//    }
     
     func answerCurrentQuestion(with answer: Bool) {
         if (currentQuestion.isCorrect && answer) || (!currentQuestion.isCorrect && !answer) {
