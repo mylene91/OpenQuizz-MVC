@@ -25,7 +25,7 @@ class Game {
         return questions[currentIndex]
     }
     
-    // controlleur acces : quand l'utilisateur veut relancer la partie - permet de remettre à 0 les parametres de la partie, charger les questions et relancer la partie 
+    // controlleur acces : quand l'utilisateur veut relancer la partie - permet de remettre à 0 les parametres de la partie, charger les questions et relancer la partie
     func refresh() {
         score = 0
         currentIndex = 0
@@ -35,6 +35,11 @@ class Game {
             self.questions = questions
             // self pour lui rappeler son contexte car en closure on perd)
             self.state = .ongoing // <- .ongoing : partie prête à démarrer
+            
+            let name = Notification.Name(rawValue: "QuestionLoaded")
+            let notification = Notification(name: name)
+            //poste de gestion des notifications - poste principal : default - methode post avec en paramètre notification objet que l'on vient de créer -> envoi
+            NotificationCenter.default.post(notification)
             
         }
         // shared = instance unique de QuestionManager puis appel de la func get : passer en paramètre la private func receiveQuestions : lorsque les questions sont chargées c'est la fonction reveiveQuestions qui va être appellée avec en paramètre les questions reçues
