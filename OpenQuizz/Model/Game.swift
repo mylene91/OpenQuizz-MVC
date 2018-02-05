@@ -25,7 +25,7 @@ class Game {
         return questions[currentIndex]
     }
     
-    // permet de remettre à 0 les parametres de la partie, charger les questions et relancerx la partie 
+    // controlleur acces : quand l'utilisateur veut relancer la partie - permet de remettre à 0 les parametres de la partie, charger les questions et relancer la partie 
     func refresh() {
         score = 0
         currentIndex = 0
@@ -47,6 +47,7 @@ class Game {
 //        state = .ongoing // <- .ongoing : partie prête à démarrer
 //    }
     
+    // le controlleur y a accès : quand l'utilisateur répond à une question
     func answerCurrentQuestion(with answer: Bool) {
         if (currentQuestion.isCorrect && answer) || (!currentQuestion.isCorrect && !answer) {
             score += 1
