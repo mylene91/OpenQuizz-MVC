@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37325C0F202C5584005EF94F /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37325C0E202C5584005EF94F /* QuestionView.swift */; };
 		7835B9E72018A9F2002FECDC /* Balham.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7835B9E62018A9F1002FECDC /* Balham.otf */; };
 		7835B9ED2018ED58002FECDC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7835B9EC2018ED58002FECDC /* Question.swift */; };
 		785E8121201F275E00969ECF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785E8120201F275D00969ECF /* Game.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37325C0E202C5584005EF94F /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		7835B9E62018A9F1002FECDC /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Balham.otf; sourceTree = "<group>"; };
 		7835B9EC2018ED58002FECDC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		785E8120201F275D00969ECF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				96995B6B2017DA8200F089B9 /* Main.storyboard */,
+				37325C0E202C5584005EF94F /* QuestionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				96995B6A2017DA8200F089B9 /* ViewController.swift in Sources */,
 				96995B682017DA8200F089B9 /* AppDelegate.swift in Sources */,
 				785E8123201F28C500969ECF /* QuestionManager.swift in Sources */,
+				37325C0F202C5584005EF94F /* QuestionView.swift in Sources */,
 				785E8121201F275E00969ECF /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
