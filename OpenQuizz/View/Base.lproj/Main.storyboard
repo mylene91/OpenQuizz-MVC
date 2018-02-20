@@ -66,9 +66,15 @@
                                 </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.34241300819999998" green="0.41808691619999999" blue="0.50959968570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.3573900163" green="0.4180979729" blue="0.5019738078" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Xe0-3M-rrd" id="l4Y-A2-X5s"/>
+                        <outlet property="newGameButton" destination="iIZ-IH-m3M" id="FgR-mV-U8h"/>
+                        <outlet property="questionView" destination="KQL-T1-SSe" id="0cN-Gc-N5Z"/>
+                        <outlet property="scoreLabel" destination="qeg-WQ-WDf" id="tdc-Ld-Khh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
